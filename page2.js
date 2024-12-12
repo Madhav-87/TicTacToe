@@ -257,7 +257,7 @@ function perform(){
             if(result[b][a]===div1[c]){
                 ++count2;
                 if(count2===3){
-                   alert(`${playername2} Wins!\n${playername2} Loose`);
+                   alert(`${playername2} Wins!\n${playername1} Loose`);
                     box9eventcount=1;box8eventcount=1;box7eventcount=1;
                     box6eventcount=1;box5eventcount=1;box4eventcount=1;
                     box3eventcount=1;box2eventcount=1;box1eventcount=1;
