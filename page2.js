@@ -12,19 +12,23 @@ let box6=document.getElementById("box2-3");
 let box7=document.getElementById("box3-1");
 let box8=document.getElementById("box3-2");
 let box9=document.getElementById("box3-3");
-let playground=document.getElementById("main");
-let player=0;
+let playground=document.querySelectorAll(".child-box");
+let player=1;
 let count1=0;
 let count2=0;
 //addEvent
 //toggel between player
-playground.addEventListener("click",()=>{
+playground.forEach((div)=>{
+    div.addEventListener("click",()=>{
+    if(div.innerText===""){
     if(player==0){
         player=1;
     }
     else{
         player=0;
     }
+    }
+})
 });
 let box1eventcount=0;
 box1.addEventListener("click",()=>{
