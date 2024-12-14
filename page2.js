@@ -65,8 +65,6 @@ function calculate(string,currentplayer){
     perform();
 }
 function perform(){
-        div0.sort();
-        div1.sort();
         for(b=0;b<=7;++b){
             for(c=0;c<div0.length;++c){
             for(a=0;a<=2;++a){
@@ -97,6 +95,9 @@ function perform(){
     }
 }
 function playAgain(){
+    playground.forEach((div)=>{
+        div.removeEventListener("click",marker)
+    });
     document.querySelector(".passion-one-regular").style.visibility="visible";
     document.querySelector(".passion-one-regular").addEventListener("click",()=>{
         window.location.reload();//reload current document
