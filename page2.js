@@ -1,17 +1,5 @@
 const playername1 = localStorage.getItem("player1");
 const playername2 = localStorage.getItem("player2");
-//page2
-let box1=document.getElementById("box1-1");
-let box2=document.getElementById("box1-2");
-let box3=document.getElementById("box1-3");
-//Box 2
-let box4=document.getElementById("box2-1");
-let box5=document.getElementById("box2-2");
-let box6=document.getElementById("box2-3");
-//Box 3
-let box7=document.getElementById("box3-1");
-let box8=document.getElementById("box3-2");
-let box9=document.getElementById("box3-3");
 let playground=document.querySelectorAll(".child-box");
 let player=1;
 let count1=0;
@@ -86,9 +74,6 @@ function perform(){
                     ++count1;
                     if(count1===3){
                        alert(`${playername1} Wins!\n${playername2} Loose`);
-                       box9eventcount=1;box8eventcount=1;box7eventcount=1;
-                       box6eventcount=1;box5eventcount=1;box4eventcount=1;
-                       box3eventcount=1;box2eventcount=1;box1eventcount=1;
                        playAgain();
                     }
                 }   
@@ -103,9 +88,6 @@ function perform(){
                 ++count2;
                 if(count2===3){
                    alert(`${playername2} Wins!\n${playername1} Loose`);
-                    box9eventcount=1;box8eventcount=1;box7eventcount=1;
-                    box6eventcount=1;box5eventcount=1;box4eventcount=1;
-                    box3eventcount=1;box2eventcount=1;box1eventcount=1;
                     playAgain();
                 }
             } 
