@@ -97,6 +97,7 @@ function perform(){
     check_tie();
 }
 function playAgain(){
+    tie=0;
     playground.forEach((div)=>{
         div.removeEventListener("click",marker)
     });
