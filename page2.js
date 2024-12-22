@@ -39,6 +39,7 @@ function marker(event){//event object is pass to access its properties
 playground.forEach((div)=>{
     div.addEventListener("click",marker)
 });
+let tie=0;
 let div0=[];
 let div1=[];
 let a;
@@ -78,6 +79,7 @@ function perform(){
                 }
             }
             count1=0;
+            check_tie();
         }
     for(b=0;b<=7;++b){
         for(c=0;c<div1.length;++c){
@@ -92,6 +94,7 @@ function perform(){
             }
         }
         count2=0;
+        check_tie();
     }
 }
 function playAgain(){
@@ -102,4 +105,11 @@ function playAgain(){
     document.querySelector(".passion-one-regular").addEventListener("click",()=>{
         window.location.reload();//reload current document
     });
+}
+function check_tie(){
+    ++tie;
+    if(tie==9){
+        alert("Tie");
+        playAgain();
+    }
 }
