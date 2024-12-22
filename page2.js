@@ -108,7 +108,7 @@ function playAgain(){
 }
 function check_tie(){
     ++tie;
-    if(tie==9){
+    if(tie==18){
         alert("Tie");
         playAgain();
     }
