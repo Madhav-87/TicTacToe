@@ -79,7 +79,6 @@ function perform(){
                 }
             }
             count1=0;
-            check_tie();
         }
     for(b=0;b<=7;++b){
         for(c=0;c<div1.length;++c){
@@ -94,8 +93,8 @@ function perform(){
             }
         }
         count2=0;
-        check_tie();
     }
+    check_tie();
 }
 function playAgain(){
     playground.forEach((div)=>{
@@ -108,7 +107,7 @@ function playAgain(){
 }
 function check_tie(){
     ++tie;
-    if(tie==18){
+    if(tie==6){
         alert("Tie");
         playAgain();
     }
